@@ -1,9 +1,7 @@
 
 
 class User(AbstractUser):
-    """
-    Custom User model extending Django's AbstractUser
-    """
+    
     email = models.EmailField(unique=True)
     
     # Use email as the unique identifier for authentication
