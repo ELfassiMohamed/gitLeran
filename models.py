@@ -1,4 +1,4 @@
-class MLPredictor:
+class features:
     def __init__(self):
         self.models = {}       # {task: RandomForestClassifier}
         self.encoders = {}     # {task: {col: LabelEncoder}}
