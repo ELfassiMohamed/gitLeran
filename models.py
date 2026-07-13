@@ -8,4 +8,6 @@ class features:
 
     
 
-    
+    def predict_all(self) :
+        
+        return predictions
