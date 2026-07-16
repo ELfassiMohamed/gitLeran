@@ -10,4 +10,9 @@ class features:
 
     def predict_all(self) :
         # write code here
+        for col in cat_cols:
+            if col in df.columns and col != meta["target"]:
+                le = LabelEncoder()
+                df[col] = le.fit_transform(df[col].astype(str))
+                self.encoders[task] = {col: le
         return predictions
